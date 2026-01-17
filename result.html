@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>集团工作年报</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+<div class="con-bg">
+    <!--顶部-->
+    <div class="top">
+        <div class="top-bar">
+            <div class="top-back"></div>
+            <div class="top-menu">
+                <a href="http://huangjq2019.gitee.io/jk/" target="_blank">数据监控平台</a>
+                <a href="http://huangjq2019.gitee.io/demo2021/" target="_blank">股票广告页</a>
+            </div>
+        </div>
+    </div>
+    <!--daohang-->
+    <div class="head-box">
+        <div class="head">
+            <h1><img src="images/logo.png"> </h1>
+            <div class="nav">
+                <ul class="layui-nav" lay-filter="">
+                    <li class="layui-nav-item"><a href="index.html">集团年报首页</a></li>
+                    <li class="layui-nav-item"><a href="task.html">任务概况</a></li>
+                    <li class="layui-nav-item"><a href="meeting.html">会议概况</a></li>
+                    <li class="layui-nav-item"><a href="person.html">人员</a></li>
+                    <li class="layui-nav-item layui-this"><a href="#">突出成绩</a></li>
+                    <li class="layui-nav-item"><a href="shortage.html">工作不足</a></li>
+                    <li class="layui-nav-item"><a href="test.html">考评</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <!--content-->
+        <div class="content">
+            <div class="img-left"><img src="images/img-left.png"></div>
+            <div class="img-right"><img src="images/img-right.png"></div>
+            <div class="con-box">
+                <div class="title">
+                    <span class="title-num">01</span>
+                    <span class="title-txt">任务数量排名</span>
+                    <span class="title-en">ling yun zhi group</span>
+                </div>
+                <div class="title-line"><img src="images/line.png" height="11" width="1080"> </div>
+                <div class="shuju-box">
+                    <div class="gs-box">
+                        <div class="gs f-l">
+                            <span class="gs-tt">任务完成质量优秀数最多的公司</span>
+                            <span class="gs-line"></span>
+                            <span class="gs-name">集团总部</span>
+                        </div>
+                        <div class="gs f-r">
+                            <span class="gs-tt">任务完成获取工时最多的公司</span>
+                            <span class="gs-line"></span>
+                            <span class="gs-name">广西普盈市场投资有限公司</span>
+                        </div>
+                    </div>
+                    <!--排名柱状图-->
+                    <div class="column">
+                        <div class="col-tt">2019年任务数公司排名前五柱状图</div>
+                        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                        <div id="result" style="width: 800px;height:400px;margin: 0 auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/result.js"> </script>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</body>
+</html>

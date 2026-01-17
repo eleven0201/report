@@ -1,0 +1,323 @@
+//**
+//  开发目的：PC端 页
+//  开发人员：huangjianqing
+//  创建时间：
+//  更新时间：
+//**
+@import "public";
+// 公用样式
+//-------------------------- */
+a:hover {
+    text-decoration: underline!important;
+}
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
+@mixin content {
+    width: 1200px;
+    margin: auto;
+}
+.con-bg {
+
+}
+.bghui {
+    background: #fafafa;
+}
+
+.anchorBL {
+    display: none;
+}
+
+.top {
+    background-color: #eeeeee;
+    line-height: 36px;
+}
+.top-bar {
+    width:1200px;
+    margin: auto;
+}
+.top-bar a:hover{
+    text-decoration: underline;
+}
+.top-bar:after, .head:after, .nav ul:after, .content:after, .shuju-box:after, .gs-box:after, .column:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.top-back {
+    float: left;
+
+}
+.top-menu {
+    float: right;
+    margin-right: 20px;
+}
+.top-menu a{
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.head {
+    width: 1200px;
+    margin: 10px auto 5px auto;
+}
+.head h1 {
+    float: left;
+    margin: 10px 0;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after, .shuju-box:after, .gs-box:after {
+    height: 4px!important;
+}
+.nav {
+    float: right;
+}
+.nav ul {
+
+}
+.nav ul li {
+    float: left;
+    margin: 0px 15px;
+}
+.nav ul li a{
+    display: inline-block;
+    font-size: 16px;
+    colr:#333!important;
+}
+.layui-this a{
+    color:#1e2088!important;
+}
+.content {
+    background: linear-gradient(to right, #843cf7, #38b8f2);
+    height: auto;
+    min-height: 850px;
+    width: 100%;
+    padding-bottom: 30px;
+    position: relative;
+}
+/*.img-box {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}*/
+.img-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.img-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.img-bottom {
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    bottom:0;
+    z-index: 2;
+}
+.con-text {
+    color:#ffffff;
+    z-index: 6;
+    text-align: center;
+    padding-top: 120px;
+}
+.con-text-num {
+    font-size: 75px;
+    line-height: 100px;
+
+}
+.con-text-txt {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 100px;
+}
+.con-text-en {
+    opacity: 0.5;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.con-text-num, .con-text-txt, .con-text-en{
+    -moz-transform:donghua ease-in-out 0.6s;
+    -webkit-animation:donghua ease-in-out 0.6s;
+    animation:donghua ease-in-out 0.6s;
+    animation-timing-function:linear;
+    transform:translate(0,0);}
+@-webkit-keyframes con-text-txt {
+    0% {
+        transform:translate(0,-400px);
+        opacity:0;
+    }
+    100% {
+        transform:translate(0,0);
+        opacity:1;
+    }
+}
+@keyframes donghua{
+    0% {
+        transform:translate(0,-400px);
+        opacity:0;
+    }
+    100% {
+        transform:translate(0,0);
+        opacity:1;
+    }
+}
+ /*renwu*/
+.title, .shuju-box{
+    margin: 0 auto;
+}
+.title {
+    color: #FFFFFF;
+    padding:30px 0 10px 480px;
+}
+.title-num {
+    font-weight: bold;
+    font-size: 30px;
+}
+.title-txt {
+    font-size: 26px;
+}
+.title-en {
+    font-size: 20px;
+    opacity: 0.15;
+    text-transform: uppercase;
+}
+
+.title-line {
+    height: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.con-box {
+    z-index: 10;
+    width: 1200px;
+    margin: 0 auto;
+}
+.shuju-box {
+    width: 1080px;
+    position: relative;
+    background:rgba( 255, 255, 255, 0.08 ) ;
+    padding: 40px 0 10px 0;
+    z-index: 6;
+
+}
+.shuju-box li {
+    text-align: center;
+    float: left;
+}
+.shuju-box li span {
+    display: block;
+    line-height: 40px;
+}
+.shuju-box li span.txt {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.shuju-box li span.num {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.shuju-box li span.bfb {
+    color: #1e2088;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.shuju-box li span.line {
+    height: 1px;
+    width: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+}
+.echart-tt {
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+.echart-tt span {
+    border-left:4px solid #1e2088;
+    padding-left:8px;
+    color: #d5deff;
+}
+/*突出成绩*/
+.gs-box {
+    width: 880px;
+    margin: 0 auto 40px auto;
+
+}
+.gs {
+    border-top: 2px solid #1e2088;
+    background: rgba(30,32,136,0.1);
+    text-align: center;
+    width: 360px;
+    margin: 10px;
+    padding:10px 0;
+}
+.gs span {
+    display: block;
+    color: #ffffff;
+}
+.gs-tt {
+    line-height: 35px;
+    font-size: 16px;
+    color: #d5deff;
+}
+.gs-line {
+    width: 60px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 auto;
+}
+.gs-name {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.column {
+    margin-top: 20px;
+    font-size: 16px!important;
+}
+.col-tt {
+    color: #1e2088;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+.padL {
+    padding-left: 20px;
+}
+/*kaoping*/
+.text-bar {
+    text-align: center;
+}
+.text-bar p {
+
+}
+.text-main {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 50px;
+}
+.text-main b {
+    font-size: 30px;
+}
+.text-sec {
+    color: #1e2088;
+    font-size: 16px;
+}
